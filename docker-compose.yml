@@ -25,7 +25,7 @@ services:
     tty: true
     ports:
       - "${MYSQL_PORT}:3306"
-     volumes:
+    volumes:
       - ./mysql:/var/lib/mysql
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
