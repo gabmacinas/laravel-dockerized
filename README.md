@@ -8,5 +8,4 @@
   change hosts file to your needs
 
 
-rm -rf && laravel new src && dcmd composer require laravel/ui && dcmd artisan ui vue --auth && dcmd npm install && npmrundev && dcmd npm install vuetify vuetify-loader vue-router  && dcmd npm install sass sass-loader fibers deepmerge -D && npmrunwatch 
-
+rm -rf ~/.docker/config.json | rm -rf .git && rm -rf src/ && cp env-example .env && laravel new src && dcup --build && dcmd composer require laravel/ui && dcmd artisan ui vue --auth && dcmd npm install && npmrundev && dcmd npm install vuetify vuetify-loader vue-router  && dcmd npm install sass sass-loader fibers deepmerge -D && npmrunwatch 
